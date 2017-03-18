@@ -1,0 +1,81 @@
+<md-dialog aria-label="new member">
+  <form>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Tambah Kotama</h2>
+        <span flex></span>
+
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <md-icon class="material-icons" aria-label="Close dialog">close</md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-dialog-content layout="column" style="max-width:500px;max-height:810px;width:400px;">
+      <md-list style="padding:0;">
+     <md-list-item class="md-1-line" id="c1" >
+          <img ng-src="{{newKotama.image}}" class="md-avatar" id="c2" style="width:70px;height:70px;"  />
+          <div class="md-list-item-text" layout="column" style="width: 74%;">
+            
+              <md-autocomplete
+                ng-disabled="isDisabled"
+                md-no-cache="isNoCache"
+                md-selected-item="selectedItem"
+                md-search-text-change="ctrl.searchTextChange(ctrl.searchText)"
+                md-search-text="searchText"
+                md-selected-item-change="onItemSelected(item)"
+                md-items="item in listKotama | filter:searchText"
+                md-item-text="item.ur_ktm"
+                md-min-length="0"
+                placeholder="Masukkan nama kotama">
+              <md-item-template>
+                <span md-highlight-text="searchText" md-highlight-flags="^i">{{item.ur_ktm}}</span>
+              </md-item-template>
+              <md-not-found>
+                "{{searchText}}" tidak ditemukan.
+              </md-not-found>
+            </md-autocomplete>
+
+            <!--<md-input-container style="    margin-top: 60px;">
+              <label style="color:white">Nama kotama</label>
+              <input name="email" type="text" ng-model="newKotama.name" style="color:white;" >
+              
+            </md-input-container>-->
+          </div>
+        </md-list-item>
+      
+      </md-list>
+     <input id="fileInput" class="ng-hide" type="file" accept="image/*" file-changed ng-model="newimage" file-preview="newimage" ng-change="uploadimage(newimage)">
+
+
+      <md-button ng-click="upload()" class="md-primary md-fab md-fab-top-right" style="top:120px;background-color:rgb(255,255,255);color:#009688">
+           <md-icon class="material-icons" aria-label="Close dialog" style="color:#009688">photo_camera</md-icon>
+      </md-button>
+         <md-content class="md-no-momentum" layout-padding style="padding: 16px 38px 0px;">
+             <md-input-container  md-no-float class="md-block">
+            <!-- Use floating label instead of placeholder -->
+               
+                <md-icon class="material-icons" class="name" >email</md-icon>
+                <input ng-model="newKotama.email" type="email" placeholder="alamat email" ng-required="true">
+                </md-input-container>
+
+                 <md-input-container  md-no-float class="md-block">
+               
+                <md-icon class="material-icons" class="name" >vpn_key</md-icon>
+                <input ng-model="newKotama.password" type="password" placeholder="kata sandi" ng-required="true">
+              </md-input-container>
+
+           
+    </md-content>
+
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+    <span flex></span>
+    <md-button ng-click="cancel()" >
+      Batal
+    </md-button>
+    <md-button ng-click="addNewKotama($event)" style="margin-right:20px;" >
+      Tambah
+    </md-button>
+  </md-dialog-actions>
+  </form>
+</md-dialog>

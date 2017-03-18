@@ -1,0 +1,38 @@
+<div layout="column">
+    <div layout="row" layout-sm="column" style="margin-top: 160px;" flex="100" ng-if="!isInventarisOpen">
+          <md-progress-circular flex md-mode="indeterminate"></md-progress-circular>
+    </div>
+
+   
+
+    <div ng-if="listInventori[0] != null && isInventarisOpen" layout="column"  class="chipsdemoContactChips tesss" >
+           <md-input-container md-no-float class="md-block">
+            <input ng-model="search" placeholder="Search">
+          </md-input-container>
+      
+             <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="width:100%;">
+            <thead>
+            <tr>
+              <th class="mdl-data-table__cell--non-numeric">No</th>
+              <th class="mdl-data-table__cell--non-numeric">Fungsi</th>
+              <th class="mdl-data-table__cell--non-numeric">Jenis</th>
+              <th class="mdl-data-table__cell--non-numeric">Jumlah</th>
+             
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="lista in listInventori | filter:search" ng-click="opendetailInventaris($event,lista)" class="clickable">
+              <td class="mdl-data-table__cell--non-numeric">{{$index+1}}</td>
+              <td class="mdl-data-table__cell--non-numeric">{{getFunctionById(getJenisById(lista.$id).id_fungsi)}}</td>
+              <td class="mdl-data-table__cell--non-numeric">{{getJenisById(lista.$id).namaJenis}}</td>
+              <td class="mdl-data-table__cell--non-numeric">{{lista.jumlah}}</td>
+            </tr>
+
+            </tbody>
+            </table>
+
+
+    </div>
+
+
+</div>

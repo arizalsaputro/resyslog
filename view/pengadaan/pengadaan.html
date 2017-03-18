@@ -1,0 +1,44 @@
+<div layout="column">
+    <div layout="row" layout-sm="column" style="margin-top: 160px;" flex="100" ng-if="!getpricellistisopen">
+          <md-progress-circular flex md-mode="indeterminate"></md-progress-circular>
+    </div>
+
+    <div ng-if="getpricellistisopen && listofPrice[0] == null">
+      No price list found
+    </div>
+
+    <div ng-if="listofPrice[0] != null && getpricellistisopen" layout="column"  class="chipsdemoContactChips tesss" >
+           <md-input-container md-no-float class="md-block">
+            <input ng-model="search" placeholder="Search">
+          </md-input-container>
+      
+             <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="width:100%;">
+            <thead>
+            <tr>
+              <th class="mdl-data-table__cell--non-numeric">No</th>
+              <th class="mdl-data-table__cell--non-numeric">Item Name</th>
+              <th>Quantity price</th>
+              <th>Service price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="lista in listofPrice | filter:search" ng-click="opendetailprice($event,lista)" class="clickable" >
+              <td class="mdl-data-table__cell--non-numeric">{{$index+1}}</td>
+              <td class="mdl-data-table__cell--non-numeric">{{lista.itemname}}</td>
+              <td>{{lista.singleprice}}</td>
+              <td>{{lista.serviceprice}}</td>
+            </tr>
+
+            </tbody>
+            </table>
+
+
+    </div>
+
+    <md-button class="md-primary md-fab md-fab-bottom-right" style="position:fixed;bottom:15px;right:15px;" ng-click="openAddnewPrice($event)">
+            <md-tooltip md-direction="top">
+              add new price
+            </md-tooltip>
+            <md-icon class="material-icons white" aria-label="Close dialog" style="position: absolute;top: 16px;right: 16px;">add</md-icon>
+    </md-button>
+</div>

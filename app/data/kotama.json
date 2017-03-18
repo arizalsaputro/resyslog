@@ -1,0 +1,79 @@
+{
+  "kotama": [
+    {
+      "id": 13,
+      "kd_ktm": "17",
+      "ur_ktm": "KODAM XVII/CEN"
+    },
+    {
+      "id": 12,
+      "kd_ktm": "16",
+      "ur_ktm": "KODAM XVI/PTM"
+    },
+    {
+      "id": 11,
+      "kd_ktm": "15",
+      "ur_ktm": "KODAM JAYA"
+    },
+    {
+      "id": 10,
+      "kd_ktm": "12",
+      "ur_ktm": "KODAM XII/TPR"
+    },
+    {
+      "id": 9,
+      "kd_ktm": "10",
+      "ur_ktm": "KODAM IM"
+    },
+    {
+      "id": 8,
+      "kd_ktm": "09",
+      "ur_ktm": "KODAM IX/UDY"
+    },
+    {
+      "id": 7,
+      "kd_ktm": "07",
+      "ur_ktm": "KODAM VII/WRB"
+    },
+    {
+      "id": 6,
+      "kd_ktm": "06",
+      "ur_ktm": "KODAM VI/MLW"
+    },
+    {
+      "id": 5,
+      "kd_ktm": "05",
+      "ur_ktm": "KODAM V/BRW"
+    },
+    {
+      "id": 4,
+      "kd_ktm": "04",
+      "ur_ktm": "KODAM IV/DIP"
+    },
+    {
+      "id": 3,
+      "kd_ktm": "03",
+      "ur_ktm": "KODAM III/SLW"
+    },
+    {
+      "id": 2,
+      "kd_ktm": "02",
+      "ur_ktm": "KODAM II/SWJ"
+    },
+    {
+      "id": 1,
+      "kd_ktm": "01",
+      "ur_ktm": "KODAM I/BB"
+    }
+  ],
+  "count": {
+    "total": 13,
+    "all": 13
+  },
+  "timestamp": {
+    "date": "2016-10-08 09:39:35.000000",
+    "timezone_type": 3,
+    "timezone": "Asia/Jakarta"
+  },
+  "success": true
+}

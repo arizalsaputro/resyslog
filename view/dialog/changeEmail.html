@@ -1,0 +1,37 @@
+<md-dialog aria-label="Profile">
+  <form>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Ganti email</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <md-icon class="material-icons" aria-label="Close dialog">close</md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-dialog-content layout="column" style="max-width:500px;max-height:810px;width:400px;">
+      	      	  <form ng-submit="updatingEmail($event)">
+      	      	  	   <div layout="column" layout-padding style="padding:30px 38px 0;">
+                      <md-input-container>
+                        <label>Email baru</label>
+                        <input name="email" type="email" ng-model="update.newEmail" >
+                        
+                      </md-input-container>
+                      <md-input-container>
+                        <label>Kata sandi</label>
+                        <input name="email" type="password" ng-model="update.password" >
+                      </md-input-container>
+                      </div>    
+                  </form>
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+	  <span flex></span>
+	  <md-button ng-click="cancel()" >
+	    Batal
+	  </md-button>
+	  <md-button ng-click="updatingEmail($event)" style="margin-right:20px;" >
+	    Perbarui
+	  </md-button>
+	</md-dialog-actions>
+  </form>
+</md-dialog>

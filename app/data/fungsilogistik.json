@@ -1,0 +1,98 @@
+{
+  "fungsilogistik": [
+    {
+      "id": 57,
+      "namaFungsi": "ALAT SAMARAN"
+    },
+    {
+      "id": 56,
+      "namaFungsi": "ALAT RINTANGAN"
+    },
+    {
+      "id": 55,
+      "namaFungsi": "ALAT PROTEKSI PERORANGAN"
+    },
+    {
+      "id": 54,
+      "namaFungsi": "ALAT PERKAKAS BERMESIN"
+    },
+    {
+      "id": 53,
+      "namaFungsi": "ALAT PERBENGKELAN"
+    },
+    {
+      "id": 52,
+      "namaFungsi": "ALAT PENYEDIAAN LISTRIK"
+    },
+    {
+      "id": 51,
+      "namaFungsi": "ALAT PENYEDIAAN AIR"
+    },
+    {
+      "id": 50,
+      "namaFungsi": "ALAT PENYEBERANGAN"
+    },
+    {
+      "id": 49,
+      "namaFungsi": "ALAT PENDUKUNG DESTRUKSI"
+    },
+    {
+      "id": 48,
+      "namaFungsi": "ALAT PEMINDAH TANAH"
+    },
+    {
+      "id": 47,
+      "namaFungsi": "ALAT PEMADAT"
+    },
+    {
+      "id": 46,
+      "namaFungsi": "ALAT EVAKUASI"
+    },
+    {
+      "id": 45,
+      "namaFungsi": "ALAT DETEKSI"
+    },
+    {
+      "id": 44,
+      "namaFungsi": "ALAT DESTRUKSI"
+    },
+    {
+      "id": 43,
+      "namaFungsi": "ALAT BANTU"
+    },
+    {
+      "id": 42,
+      "namaFungsi": "ALAT ANGKUT MUAT"
+    },
+    {
+      "id": 41,
+      "namaFungsi": "ALAT ANGKUT BERAT"
+    },
+    {
+      "id": 16,
+      "namaFungsi": "KENDARAAN TEMPUR"
+    },
+    {
+      "id": 15,
+      "namaFungsi": "SENJATA API LARAS PANJANG"
+    },
+    {
+      "id": 14,
+      "namaFungsi": "SENJATA API PISTOL"
+    },
+    {
+      "id": 12,
+      "namaFungsi": "KENDARAAN BERMOTOR"
+    }
+  ],
+  "count": {
+    "total": 21,
+    "all": 21
+  },
+  "timestamp": {
+    "date": "2016-10-08 13:36:05.000000",
+    "timezone_type": 3,
+    "timezone": "Asia/Jakarta"
+  },
+  "success": true
+}

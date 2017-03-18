@@ -1,0 +1,151 @@
+<div layout="column"  ng-cloak style="height:100%;" >
+  <section layout="row" flex>
+    <md-sidenav
+        class="md-sidenav-left"
+        md-component-id="left"
+        md-is-locked-open="$mdMedia('gt-md')"
+       
+        md-whiteframe="1">
+      
+      <md-toolbar>
+        <div class="md-toolbar-tools" >
+          
+          <md-button class="md-icon-button" aria-label="Icon" hide-gt-md ng-click="toggleLeft()">
+              <md-icon class="material-icon" >arrow_back</md-icon>
+          </md-button>
+
+          <h2>
+            <span>Resyslog Pusat</span>
+          </h2>
+
+
+          <md-menu>
+          <md-button aria-label="Open phone interactions menu" class="md-icon-button" ng-click="openMenu($mdOpenMenu, $event)">
+            <md-icon md-menu-origin="" class="material-icon">more_vert</md-icon>
+          </md-button>
+          <md-menu-content width="4">
+            <md-menu-item>
+              <md-button ng-click="openProfile($event)">
+                <md-icon class="material-icon" md-menu-align-target="">person</md-icon>
+                Profile
+              </md-button>
+            </md-menu-item>
+              <md-menu-item>
+                <md-button >
+                <md-icon class="material-icon">settings</md-icon>
+                Settings
+              </md-button>
+            </md-menu-item>
+            <md-menu-divider></md-menu-divider>
+              <md-menu-item>
+              <md-button  ng-click="logOutApp()">
+                <md-icon class="material-icon"></md-icon>
+                Log out
+              </md-button>
+            </md-menu-item>
+          </md-menu-content>
+        </md-menu>
+
+          
+        </div>
+      </md-toolbar>
+
+      <md-content flex  ng-controller="LeftCtrl">
+        
+        <md-content layout-padding>
+           <md-list>
+              <md-subheader class="md-no-sticky" style="background-color:rgb(255, 255, 255);">Dashboard</md-subheader>
+              <md-list-item ng-click="goTopAnotherPage('dash.inventaris');">
+                <md-icon class="md-default-theme" class="material-icons">library_books</md-icon>
+                <p>Inventaris</p>
+                <div class="md-secondary">{{listInventori.length}}</div>
+              </md-list-item>
+              <!--<md-list-item ng-click="goTopAnotherPage('dash.pengadaan');">
+                <md-icon class="md-default-theme" class="material-icons">assignment</md-icon>
+                <p>Pengadaan</p>
+                <div class="md-secondary">2</div>
+              </md-list-item>-->
+                <md-list-item ng-click="goTopAnotherPage('dash.permintaan');">
+                <md-icon class="md-default-theme" class="material-icons">add_alert</md-icon>
+                <p>Permintaan</p>
+                <div class="md-secondary" >{{getRequestLength()}}</div>
+              </md-list-item>
+              <md-list-item ng-click="goTopAnotherPage('dash.distribusi');">
+                <md-icon class="md-default-theme" class="material-icons">local_shipping</md-icon>
+                <p>Distribusi</p>
+                 <div class="md-secondary" >{{getDistributionLength()}}</div>
+              </md-list-item>
+               <md-list-item ng-click="goTopAnotherPage('dash.recommender');">
+                <md-icon class="md-default-theme" class="material-icons">lightbulb_outline</md-icon>
+                <p>Recommender</p>
+                <md-icon class="md-secondary">2</md-icon>
+              </md-list-item>
+                 <md-divider></md-divider>
+              <md-subheader class="md-no-sticky" style="background-color:rgb(255, 255, 255);">Operasi</md-subheader>
+
+               <md-list-item ng-click="goTopAnotherPage('dash.kotama');">
+                <md-icon class="md-default-theme" class="material-icons">account_balance</md-icon>
+                <p>Kotama</p>
+                <md-icon class="md-secondary">2</md-icon>
+              </md-list-item>
+                 
+              <md-divider></md-divider>
+              <md-subheader class="md-no-sticky" style="background-color:rgb(255, 255, 255);">Analytics</md-subheader>
+              
+              <md-list-item ng-click="goTopAnotherPage('dash.statis');">
+                <md-icon class="md-default-theme" class="material-icons">show_chart</md-icon>
+                <p>Statistik</p>
+              </md-list-item>
+          </md-list>
+        </md-content>
+
+      </md-content>
+    </md-sidenav>
+    <md-content flex >
+      <div layout="column" layout-fill layout-align="top center">
+          <md-toolbar>
+          <div class="md-toolbar-tools">
+            
+             <md-button class="md-icon-button" aria-label="Icon" hide-gt-md ng-click="toggleLeft()">
+              
+              <md-icon class="material-icon" >menu</md-icon>
+            </md-button>
+
+            <h2>
+              <span>{{dashtitile}}</span>
+            </h2>
+
+            
+             <md-menu>
+          <md-button aria-label="Open phone interactions menu" class="md-icon-button" ng-click="openMenu($mdOpenMenu, $event)">
+            <md-icon md-menu-origin="" class="material-icon">more_vert</md-icon>
+          </md-button>
+          <md-menu-content width="2">
+            <md-menu-item>
+              <md-button >
+                About
+              </md-button>
+            </md-menu-item>
+              <md-menu-item>
+                <md-button >
+                Help
+              </md-button>
+            </md-menu-item>
+         
+          </md-menu-content>
+        </md-menu>
+            
+          </div>
+        </md-toolbar>
+
+        <md-content ui-view name="view-dash" style="width:100%;" layout="row" layout-align="center none">
+      
+        </md-content>
+        
+
+      </div>
+      <div flex></div>
+    </md-content>
+    
+  </section>
+</div>

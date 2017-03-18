@@ -1,0 +1,43 @@
+<div layout="column" layout-align="center center">
+
+    <div layout="row" layout-sm="column" style="margin-top: 160px;" flex="100" ng-if="!isKotamaOpen">
+          <md-progress-circular flex md-mode="indeterminate"></md-progress-circular>
+    </div>
+
+    <div ng-if="isKotamaOpen && listKotama[0] == null">
+      Tidak ada data kotama
+    </div>
+
+    <div ng-if="listKotama[0] != null && isKotamaOpen" layout="column"  class="chipsdemoContactChips tesss" >
+     <md-input-container md-no-float class="md-block">
+      <input ng-model="search" placeholder="Search">
+    </md-input-container>
+
+    	
+        <md-list class="fixedRows" >
+         
+          <md-list-item flex class="md-2-line contact-item"  ng-repeat="kotama in listKotama | filter:search |orderBy : reverse:true" ng-click="openDetailKotama($event,kotama)">
+           <!-- <md-checkbox  ng-model="person.selected"></md-checkbox>-->
+            <img ng-src="{{kotama.image}}" class="md-avatar" id="c1" >
+            <div class="md-list-item-text compact">
+              <h3>{{kotama.ur_ktm || 'aaaaaaaaaaaaaaaaaaaa'}}</h3>
+              <p>{{kotama.$id || 'ssssssssssssssssssssssss'}}</p>
+            </div>
+
+          </md-list-item>
+
+        </md-list>
+
+
+
+
+    </div>
+
+    <md-button class="md-primary md-fab md-fab-bottom-right" style="position:fixed;bottom:15px;right:15px;" ng-click="openAddnewKotama($event)">
+            <md-tooltip md-direction="top">
+              tambah data kotama
+            </md-tooltip>
+            <md-icon class="material-icons white" aria-label="Close dialog" style="position: absolute;top: 16px;right: 16px;">add</md-icon>
+    </md-button>
+
+</div>

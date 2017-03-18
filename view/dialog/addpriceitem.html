@@ -1,0 +1,46 @@
+<md-dialog aria-label="Profile">
+  <form>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>New Price List</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <md-icon class="material-icons" aria-label="Close dialog">close</md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-dialog-content layout="column" style="max-width:500px;max-height:810px;width:400px;">
+      	      	  <form ng-submit="updatingEmail($event)">
+      	      	  	   <div layout="column" layout-padding style="padding:30px 38px 0;">
+                       <md-input-container>
+                        <label>Category</label>
+                        <input name="name" type="text" ng-model="newprice.categori" placeholder="category">
+                        
+                      </md-input-container>
+                      <md-input-container>
+                        <label>Item Name</label>
+                        <input name="name" type="text" ng-model="newprice.itemname" placeholder="name (require)" >
+                        
+                      </md-input-container>
+                      <md-input-container>
+                        <label>Quantity Price</label>
+                        <input name="price" type="tel" ng-model="newprice.singleprice" placeholder="quantity (require)">
+                      </md-input-container>
+                        <md-input-container>
+                        <label>Service Price</label>
+                        <input name="price" type="tel" ng-model="newprice.serviceprice" placeholder="service (require)">
+                      </md-input-container>
+                      </div>    
+                  </form>
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+	  <span flex></span>
+	  <md-button ng-click="cancel()" >
+	    Cancel
+	  </md-button>
+	  <md-button ng-click="addnewprice($event)" style="margin-right:20px;" >
+	    Add
+	  </md-button>
+	</md-dialog-actions>
+  </form>
+</md-dialog>

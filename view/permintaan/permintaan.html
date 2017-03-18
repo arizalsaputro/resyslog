@@ -1,0 +1,79 @@
+<div layout="column" layout-align="center center">
+
+    <div layout="row" layout-sm="column" style="margin-top: 160px;" flex="100" ng-if="!isPermintaanOpen">
+          <md-progress-circular flex md-mode="indeterminate"></md-progress-circular>
+    </div>
+
+    <div ng-if="isPermintaanOpen && listPermintaan[0] == null">
+      Tidak ada permintaan logistik.
+    </div>
+
+        <div ng-if="listPermintaan[0] != null && isPermintaanOpen" layout="column"  class="chipsdemoContactChips tesss" >
+           <md-input-container md-no-float class="md-block">
+            <input ng-model="search" placeholder="Search">
+          </md-input-container>
+            
+            <md-tabs md-center-tabs="true" md-dynamic-height md-border-bottom>
+               <md-tab label="belum ditanggapi">
+                  <md-content class="md-padding">
+                    
+                     <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="width:100%;">
+                      <thead>
+                      <tr>
+                        <th class="mdl-data-table__cell--non-numeric">No</th>
+                        <th class="mdl-data-table__cell--non-numeric">Tanggal</th>
+                        <th class="mdl-data-table__cell--non-numeric">Dari</th>
+                        <th class="mdl-data-table__cell--non-numeric">Fungsi</th>
+                        <th class="mdl-data-table__cell--non-numeric">Jenis</th>
+                        <th class="mdl-data-table__cell--non-numeric">Jumlah</th>
+                        
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr ng-repeat="lista in listPermintaan | filter:search | orderBy : reverse:true" ng-click="openDetailPermintaan($event,lista,true)" class="clickable" ng-class="{'notacc' : lista.darurat}" ng-if="checkStatus(lista.status)">
+                       <td class="mdl-data-table__cell--non-numeric" ng-init="nmr = getNomor(0)">{{nmr}}</td>
+                        <td class="mdl-data-table__cell--non-numeric">{{ getDatebyTimeStamp(lista.time)}}</td>
+                        <td class="mdl-data-table__cell--non-numeric">{{getKotamaName(lista.from)}}</td>
+                        <td class="mdl-data-table__cell--non-numeric">{{getFunctionById(lista.jenis.id_fungsi)}}</td>
+                        <td class="mdl-data-table__cell--non-numeric">{{lista.jenis.namaJenis}}</td>
+                         <td class="mdl-data-table__cell--non-numeric">{{lista.jumlah}}</td>
+                      </tr>
+
+                      </tbody>
+                    </table>
+
+                  </md-content>
+                </md-tab>
+                 <md-tab label="sudah ditanggapi">
+                    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="width:100%;">
+                        <thead>
+                        <tr>
+                          <th class="mdl-data-table__cell--non-numeric">No</th>
+                          <th class="mdl-data-table__cell--non-numeric">Tanggal</th>
+                          <th class="mdl-data-table__cell--non-numeric">Dari</th>
+                          <th class="mdl-data-table__cell--non-numeric">Fungsi</th>
+                          <th class="mdl-data-table__cell--non-numeric">Jenis</th>
+                          <th class="mdl-data-table__cell--non-numeric">Jumlah</th>
+                          <th class="mdl-data-table__cell--non-numeric">Status</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="lista in listPermintaan | filter:search | orderBy : reverse:true" ng-click="openDetailPermintaan($event,lista,false)" class="clickable" ng-class="{'notacc' : lista.darurat}" ng-if="!checkStatus(lista.status)">
+                         <td class="mdl-data-table__cell--non-numeric" ng-init="nmr = getNomor(1)">{{nmr}}</td>
+                          <td class="mdl-data-table__cell--non-numeric">{{ getDatebyTimeStamp(lista.time)}}</td>
+                          <td class="mdl-data-table__cell--non-numeric">{{getKotamaName(lista.from)}}</td>
+                          <td class="mdl-data-table__cell--non-numeric">{{getFunctionById(lista.jenis.id_fungsi)}}</td>
+                          <td class="mdl-data-table__cell--non-numeric">{{lista.jenis.namaJenis}}</td>
+                           <td class="mdl-data-table__cell--non-numeric">{{lista.jumlah}}</td>
+                            <td class="mdl-data-table__cell--non-numeric">{{getStatus(lista.status)}}</td>
+                        </tr>
+
+                        </tbody>
+                      </table>
+                 </md-tab>
+            </md-tabs>
+
+    </div>
+
+
+</div>

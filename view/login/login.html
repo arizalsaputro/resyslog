@@ -1,0 +1,60 @@
+<div layout="row" style="height:100%;">
+    <div layout="column" flex>
+      
+      <div flex="35" id="c1"></div>
+      <div flex="65" id="c2" layout="row" layout-align="center start">
+         <div layout="column" id="totop" >
+
+              <div layout="row" layout-align="space-between center" style="width:430px;">
+                    <span class="md-title white" style="padding: 10px 28px;font-weight: normal;">Resyslog Pusat</span>
+                  <md-button aria-label="next" class="white" ng-click="enterLogin($event)">
+                    lanjut
+                    <md-icon md-font-set="material-icons" class="white">navigate_next</md-icon>
+                  </md-button>
+              </div>
+
+               <md-card class="md-whiteframe-1dp" style="padding:30px 38px;width:430px;">
+                  <md-card-title layout-padding>
+                    <md-card-title-text>
+                      <span class="md-headline">Masuk</span>
+                      <span class="md-subhead">Masukkan email dan kata sandi.</span>
+                    </md-card-title-text>
+                  </md-card-title>
+                  <form name="loginForm" ng-submit="enterLogin($event)">
+                    <md-card-content layout="column"> 
+                      
+                      <md-input-container>
+                        <label>Email</label>
+                        <input name="email" type="email" ng-model="datalogin.email" ng-model-options="{ debounce: 1000 }" ng-change="checkOnChange($event)">
+                        
+                      </md-input-container>
+                      <md-input-container>
+                        <label>Kata sandi</label>
+                        <input name="email" ng-model="datalogin.password"  ng-model-options="{ debounce: 1000 }" type="password" ng-change="checkOnChange($event)">
+                        
+                      </md-input-container>
+
+                       <md-input-container class="ng-hide">
+                       <label>Submit</label>
+                        <input type="submit" >
+                      </md-input-container>
+                      
+                    </md-card-content>
+                  </form>
+           
+                  
+              </md-card>
+             
+              <div style="width:430px;text-align:center;">
+                <p class="loginbottom">lupa kata sandi ? <a class="clickable" ng-click="showResetPassword($event)">atur ulang kata sandi.</a></p>
+              </div>
+
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+

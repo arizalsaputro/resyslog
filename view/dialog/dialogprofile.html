@@ -1,0 +1,143 @@
+<md-dialog aria-label="Profile">
+  <form>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Profile</h2>
+        <span flex></span>
+         <md-button class="md-icon-button" ng-click="openUpdateName($event)">
+          <md-tooltip md-direction="left">
+          edit name
+        </md-tooltip>
+          <md-icon class="material-icons" aria-label="Update Name dialog">edit</md-icon>
+        </md-button>
+        <md-button class="md-icon-button" ng-click="cancel()">
+        	<md-tooltip md-direction="bottom">
+          close
+        </md-tooltip>
+          <md-icon class="material-icons" aria-label="Close dialog">close</md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-dialog-content layout="column" style="max-width:500px;max-height:810px;width:400px;">
+      <md-list style="padding:0;">
+		 <md-list-item class="md-2-line" id="c1" >
+          <img ng-src="{{profileadmin.image}}" class="md-avatar" id="c2" style="width:70px;height:70px;"  />
+          <div class="md-list-item-text" layout="column">
+            <h3 style="color:rgb(255,255,255);">{{profileadmin.name}}</h3>
+            <h4 style="color:rgb(255,255,255);">{{statusprofile}}</h4>
+          </div>
+        </md-list-item>
+    	
+      </md-list>
+     <input id="fileInput" class="ng-hide" type="file" accept="image/*" file-changed ng-model="newimage" file-preview="newimage" ng-change="uploadimage(newimage)">
+
+
+  	  <md-button ng-click="upload()" class="md-primary md-fab md-fab-top-right" style="top:116px;background-color:rgb(255,255,255);color:#009688">
+  	      <md-tooltip md-direction="bottom">
+          upload image
+        </md-tooltip>
+           <md-icon class="material-icons" aria-label="Close dialog" style="color:#009688">photo_camera</md-icon>
+      </md-button>
+      <md-content>
+      <md-list layout-padding>
+       	     <md-list-item class="md-2-line" >
+	          <md-icon class="material-icons">email</md-icon>
+	     
+	          <div class="md-list-item-text">
+	            <h3>{{profileadmin.email}}</h3>
+	            <p>email</p>
+	          </div>
+	
+	        </md-list-item>
+	        <md-list-item class="md-2-line" ng-if="profileadmin.phone" >
+	          <md-icon class="material-icons">phone</md-icon>
+	     
+	          <div class="md-list-item-text">
+	            <h3>{{profileadmin.phone}}</h3>
+	            <p>phone</p>
+	          </div>
+	
+	        </md-list-item>
+
+	          <md-list-item class="md-2-line" ng-if="profileadmin.address" >
+	          <md-icon class="material-icons">location_on</md-icon>
+	     
+	          <div class="md-list-item-text">
+	            <h3>{{profileadmin.address}}</h3>
+	            <p>address</p>
+	          </div>
+	
+	        </md-list-item>
+
+	        <md-divider></md-divider>
+	          <md-list-item class="md-1-line" >
+	          <md-icon class="material-icons"></md-icon>
+	     
+	          <div class="md-list-item-text">
+	            <a class="clickable" ng-click="deleteImage()">Delete image</a>
+	          </div>
+	
+	        </md-list-item>
+
+	         <md-list-item class="md-1-line" >
+	          <md-icon class="material-icons"></md-icon>
+	     
+	          <div class="md-list-item-text">
+	            <a class="clickable" ng-click="openupdateEmail($event)">Change email</a>
+	          </div>
+	
+	        </md-list-item>
+
+	         <md-list-item class="md-1-line" ng-if="profileadmin.phone">
+	          <md-icon class="material-icons"></md-icon>
+	     
+	          <div class="md-list-item-text">
+	            <a class="clickable" ng-click="openUpdatePhone($event)">Change phone</a>
+	          </div>
+	
+	        </md-list-item>
+
+	         <md-list-item class="md-1-line" ng-if="profileadmin.address">
+	          <md-icon class="material-icons"></md-icon>
+	     
+	          <div class="md-list-item-text">
+	            <a class="clickable" ng-click="openUpdateAddres($event)">Change address</a>
+	          </div>
+	
+	        </md-list-item>
+
+	        <md-list-item class="md-1-line" >
+	          <md-icon class="material-icons"></md-icon>
+	     
+	          <div class="md-list-item-text">
+	            <a class="clickable" ng-click="openupdatepassword($event)">Change password</a>
+	          </div>
+	
+	        </md-list-item>
+
+	        <md-list-item class="md-1-line" >
+	          <md-icon class="material-icons"></md-icon>
+	     
+	          <div class="md-list-item-text">
+	            <a class="clickable" ng-click="resetPassword($event)">Reset password</a>
+	          </div>
+	
+	        </md-list-item>
+
+	           <md-list-item class="md-1-line" ng-if="profileadmin.phone && profileadmin.address" >
+	          <md-icon class="material-icons"></md-icon>
+	     
+	          <div class="md-list-item-text">
+	            <a class="clickable" ng-click="deleteAccount($event)">Delete account</a>
+	          </div>
+	
+	        </md-list-item>
+
+       </md-list>
+       </md-content>
+   
+      	 
+    </md-dialog-content>
+    
+  </form>
+</md-dialog>

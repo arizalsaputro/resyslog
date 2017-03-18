@@ -1,0 +1,404 @@
+{
+  "jenislogistik": [
+    {
+      "id": 65,
+      "kdJenis": 1,
+      "namaJenis": "JARING SAMARAN 340X6",
+       "id_fungsi":57
+    },
+    {
+      "id": 64,
+      "kdJenis": 1,
+      "namaJenis": "ROLL HARMONIKA",
+      "id_fungsi":53
+    },
+    {
+      "id": 63,
+      "kdJenis": 1,
+      "namaJenis": "TOPENG PELINDUNG + FILTER",
+     "id_fungsi":57
+    },
+    {
+      "id": 62,
+      "kdJenis": 1,
+      "namaJenis": "GERGAJI MESIN",
+    "id_fungsi":54
+    },
+    {
+      "id": 61,
+      "kdJenis": 4,
+      "namaJenis": "WELDING SET",
+    "id_fungsi":53
+    },
+    {
+      "id": 60,
+      "kdJenis": 3,
+      "namaJenis": "SHOP CONTACT MAINTENANCE TRUCK",
+    "id_fungsi":46
+    },
+    {
+      "id": 59,
+      "kdJenis": 2,
+      "namaJenis": "LUBRICATING SERVICE UNIT TRUCK",
+    "id_fungsi":46
+    },
+    {
+      "id": 58,
+      "kdJenis": 1,
+      "namaJenis": "CHARGING SET",
+    "id_fungsi":43
+    },
+    {
+      "id": 57,
+      "kdJenis": 7,
+      "namaJenis": "GENSET 5 KVA",
+    "id_fungsi":54
+    },
+    {
+      "id": 56,
+      "kdJenis": 6,
+      "namaJenis": "GENSET 3 KVA",
+    "id_fungsi":54
+    },
+    {
+      "id": 55,
+      "kdJenis": 5,
+      "namaJenis": "GENSET 125 KVA",
+    "id_fungsi":54
+    },
+    {
+      "id": 54,
+      "kdJenis": 4,
+      "namaJenis": "GENSET 10 KVA",
+    "id_fungsi":54
+    },
+    {
+      "id": 53,
+      "kdJenis": 1,
+      "namaJenis": "Pompa Air 125 Gpm",
+    "id_fungsi":51
+    },
+    {
+      "id": 52,
+      "kdJenis": 5,
+      "namaJenis": "ALAT BOR AIR",
+    "id_fungsi":51
+    },
+    {
+      "id": 51,
+      "kdJenis": 4,
+      "namaJenis": "MOBIL PENJERNIH",
+    "id_fungsi":58
+    },
+    {
+      "id": 50,
+      "kdJenis": 3,
+      "namaJenis": "WATER PURIFICATION",
+    "id_fungsi":51
+    },
+    {
+      "id": 49,
+      "kdJenis": 2,
+      "namaJenis": "POMPA AIR 50 GPM",
+    "id_fungsi":51
+    },
+    {
+      "id": 48,
+      "kdJenis": 1,
+      "namaJenis": "POMPA AIR 125 GPM",
+    "id_fungsi":51
+    },
+    {
+      "id": 47,
+      "kdJenis": 8,
+      "namaJenis": "PERAHU SERBU 15 ORANG",
+    "id_fungsi":16
+    },
+    {
+      "id": 46,
+      "kdJenis": 7,
+      "namaJenis": "PERAHU SERBU 10 ORANG",
+    "id_fungsi":16
+    },
+    {
+      "id": 45,
+      "kdJenis": 6,
+      "namaJenis": "PERAHU INTAI 3 ORANG",
+    "id_fungsi":16
+    },
+    {
+      "id": 44,
+      "kdJenis": 5,
+      "namaJenis": "MOTOR TEMPEL 50 PK",
+    "id_fungsi":12
+    },
+    {
+      "id": 43,
+      "kdJenis": 4,
+      "namaJenis": "MOTOR TEMPEL 40 PK",
+    "id_fungsi":12
+    },
+    {
+      "id": 42,
+      "kdJenis": 3,
+      "namaJenis": "MOTOR TEMPEL 25 PK",
+    "id_fungsi":12
+    },
+    {
+      "id": 41,
+      "kdJenis": 2,
+      "namaJenis": "JEMBATAN ACROW PANEL",
+    "id_fungsi":50
+    },
+    {
+      "id": 40,
+      "kdJenis": 1,
+      "namaJenis": "JEMBATAN BAILLEY",
+    "id_fungsi":50
+    },
+    {
+      "id": 39,
+      "kdJenis": 2,
+      "namaJenis": "COMPRESSOR PNEUMATIC TOOL",
+    "id_fungsi":42
+    },
+    {
+      "id": 38,
+      "kdJenis": 1,
+      "namaJenis": "COMPRESSOR",
+    "id_fungsi":42
+    },
+    {
+      "id": 37,
+      "kdJenis": 2,
+      "namaJenis": "GRADER",
+    "id_fungsi":45
+    },
+    {
+      "id": 36,
+      "kdJenis": 1,
+      "namaJenis": "BULLDOZER",
+    "id_fungsi":16
+    },
+    {
+      "id": 35,
+      "kdJenis": 1,
+      "namaJenis": "VIBRATOR ROLLER 10 T",
+    "id_fungsi":44
+    },
+    {
+      "id": 34,
+      "kdJenis": 2,
+      "namaJenis": "RANSUS JIHANDAK",
+    "id_fungsi":41
+    },
+    {
+      "id": 33,
+      "kdJenis": 1,
+      "namaJenis": "RAN 3/4 T",
+    "id_fungsi":14
+    },
+    {
+      "id": 32,
+      "kdJenis": 5,
+      "namaJenis": "MINE DETECTOR",
+    "id_fungsi":14
+    },
+    {
+      "id": 31,
+      "kdJenis": 4,
+      "namaJenis": "METAL DETECTOR",
+    "id_fungsi":14
+    },
+    {
+      "id": 30,
+      "kdJenis": 3,
+      "namaJenis": "INSPECTION MIRROR",
+    "id_fungsi":15
+    },
+    {
+      "id": 29,
+      "kdJenis": 2,
+      "namaJenis": "HAND HELD METAL DETECTOR",
+    "id_fungsi":14
+    },
+    {
+      "id": 28,
+      "kdJenis": 1,
+      "namaJenis": "EXPLOSIVE DETECTOR",
+    "id_fungsi":14
+    },
+    {
+      "id": 27,
+      "kdJenis": 1,
+      "namaJenis": "DEMOLITION SET",
+    "id_fungsi":48
+    },
+    {
+      "id": 26,
+      "kdJenis": 2,
+      "namaJenis": "HOOK AND LINE SET",
+    "id_fungsi":49
+    },
+    {
+      "id": 25,
+      "kdJenis": 1,
+      "namaJenis": "EOD TOOLKIT",
+    "id_fungsi":43
+    },
+    {
+      "id": 24,
+      "kdJenis": 5,
+      "namaJenis": "WHEEL LOADER",
+    "id_fungsi":45
+    },
+    {
+      "id": 23,
+      "kdJenis": 4,
+      "namaJenis": "EXCAVATOR",
+    "id_fungsi":45
+    },
+    {
+      "id": 22,
+      "kdJenis": 3,
+      "namaJenis": "CRANE 20 T",
+    "id_fungsi":42
+    },
+    {
+      "id": 21,
+      "kdJenis": 2,
+      "namaJenis": "CRANE 10 T",
+    "id_fungsi":42
+    },
+    {
+      "id": 20,
+      "kdJenis": 1,
+      "namaJenis": "BACKHOE LOADER",
+    "id_fungsi":46
+    },
+    {
+      "id": 19,
+      "kdJenis": 6,
+      "namaJenis": "TRAILLER LOW BED 20 T",
+    "id_fungsi":45
+    },
+    {
+      "id": 18,
+      "kdJenis": 5,
+      "namaJenis": "TRAILER HYDRAULIC/TRADO",
+    "id_fungsi":53
+    },
+    {
+      "id": 17,
+      "kdJenis": 4,
+      "namaJenis": "PRIME MOVER 5 T",
+    "id_fungsi":48
+    },
+    {
+      "id": 16,
+      "kdJenis": 3,
+      "namaJenis": "PRIME MOVER 20 T",
+    "id_fungsi":48
+    },
+    {
+      "id": 15,
+      "kdJenis": 2,
+      "namaJenis": "DUMP TRUCK 5 T",
+    "id_fungsi":16
+    },
+    {
+      "id": 14,
+      "kdJenis": 1,
+      "namaJenis": "DUMP TRUCK 2 1/2 T",
+    "id_fungsi":16
+    },
+    {
+      "id": 13,
+      "kdJenis": 9,
+      "namaJenis": "TANK AVLB",
+    "id_fungsi":16
+    },
+    {
+      "id": 12,
+      "kdJenis": 8,
+      "namaJenis": "TANK RECOVERY",
+    "id_fungsi":16
+    },
+    {
+      "id": 11,
+      "kdJenis": 7,
+      "namaJenis": "TANK MORTIR",
+    "id_fungsi":16
+    },
+    {
+      "id": 10,
+      "kdJenis": 6,
+      "namaJenis": "TANK LOGISTIK",
+    "id_fungsi":16
+    },
+    {
+      "id": 9,
+      "kdJenis": 5,
+      "namaJenis": "TANK COMANDO",
+    "id_fungsi":16
+    },
+    {
+      "id": 8,
+      "kdJenis": 4,
+      "namaJenis": "TANK  CANON 105",
+    "id_fungsi":16
+    },
+    {
+      "id": 7,
+      "kdJenis": 3,
+      "namaJenis": "TANK CANON",
+    "id_fungsi":16
+    },
+    {
+      "id": 6,
+      "kdJenis": 2,
+      "namaJenis": "TANK AMBULANCE",
+    "id_fungsi":16
+    },
+    {
+      "id": 5,
+      "kdJenis": 1,
+      "namaJenis": "TANK APC",
+    "id_fungsi":16
+    },
+    {
+      "id": 4,
+      "kdJenis": 2,
+      "namaJenis": "SENJATA API LARAS PANJANG",
+    "id_fungsi":15
+    },
+    {
+      "id": 3,
+      "kdJenis": 1,
+      "namaJenis": "SENJATA API - PISTOL",
+    "id_fungsi":14
+    },
+    {
+      "id": 2,
+      "kdJenis": 2,
+      "namaJenis": "RANMOR RODA 2",
+    "id_fungsi":12
+    },
+    {
+      "id": 1,
+      "kdJenis": 1,
+      "namaJenis": "RANMOR RODA 4",
+    "id_fungsi":41
+    }
+  ],
+  "count": {
+    "total": 65,
+    "all": 65
+  },
+  "timestamp": {
+    "date": "2016-10-08 13:44:19.000000",
+    "timezone_type": 3,
+    "timezone": "Asia/Jakarta"
+  },
+  "success": true
+}

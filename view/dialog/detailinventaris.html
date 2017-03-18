@@ -1,0 +1,87 @@
+<md-dialog aria-label="Detail Price">
+  <form>
+    <md-toolbar ng-style="styleD">
+      <div class="md-toolbar-tools">
+        <h2>Detail inventaris</h2>
+        <span flex></span>
+        
+        <md-button class="md-icon-button" ng-click="cancel()">
+        	<md-tooltip md-direction="bottom">
+          close
+        </md-tooltip>
+          <md-icon class="material-icons" aria-label="Close dialog">close</md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-dialog-content layout="column" style="max-width:500px;max-height:810px;width:400px;">
+      <md-content>
+      <md-list layout-padding>
+       	     <md-list-item class="md-2-line" >
+	          <md-icon class="material-icons">label</md-icon>
+	     
+	          <div class="md-list-item-text">
+	            <h3>{{getJenisById(detailP.$id).namaJenis}}</h3>
+	            <p>Nama item</p>
+	          </div>
+	
+	        </md-list-item>
+
+	        <md-list-item class="md-2-line" >
+	          <md-icon class="material-icons"></md-icon>
+	     
+	          <div class="md-list-item-text">
+	            <h3>{{getFunctionById(getJenisById(detailP.$id).id_fungsi)}}</h3>
+	            <p>fungsi</p>
+	          </div>
+	
+	        </md-list-item>
+
+	         <md-list-item class="md-2-line" >
+	          <md-icon class="material-icons"></md-icon>
+	     
+	          <div class="md-list-item-text">
+	            <h3>{{getDatebyTimeStamp(detailP.time)}}</h3>
+	            <p>tanggal pengadaan</p>
+	          </div>
+	
+	        </md-list-item>
+
+	        
+
+	        <md-list-item class="md-2-line" >
+	          <md-icon class="material-icons"></md-icon>
+	     
+	          <div class="md-list-item-text" style="color:red">
+	            <h3 >{{detailP.jumlah}}</h3>
+	            <p>jumlah</p>
+	          </div>
+	
+	        </md-list-item>
+
+	         <md-list-item class="md-2-line" >
+	          <md-icon class="material-icons"></md-icon>
+	     
+	          <div class="md-list-item-text" style="color:red">
+	            <h3 >{{detailP.dipakai}}</h3>
+	            <p>item dipakai</p>
+	          </div>
+	
+	        </md-list-item>
+
+	  
+	        <md-divider></md-divider>
+		         
+		          <md-list-item class="md-1-line">
+		          <md-icon class="material-icons"></md-icon>
+		          <div class="md-list-item-text">
+		            <a class="clickable" ng-click="hapusItem()">Hapus item</a>
+		          </div>
+		        </md-list-item>
+
+       </md-list>
+       </md-content>
+      	 
+    </md-dialog-content>
+    
+  </form>
+</md-dialog>
